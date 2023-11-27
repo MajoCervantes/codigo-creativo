@@ -1,0 +1,94 @@
+@import '../../scss/index.scss';
+
+.services_container {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  padding: 0 25px;
+
+  .card {
+    padding: 10px;
+    border: 1px solid $border;
+    text-align: center;
+    margin: 15px 0;
+    &:hover {
+      border: 1px solid $highlight-primary;
+      h2 {
+        color: $highlight-primary;
+      }
+    }
+    h2 {
+      color: $highlight-secondary;
+      font-weight: 600 !important;
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    .image_container {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  button {
+    background-color: $highlight-secondary;
+    color: $background;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin: 34px 0 20px 0;
+    font-weight: bold;
+    border: none;
+    width: 70%;
+    cursor: pointer;
+    &:hover {
+      background-color: $highlight-primary;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  .services_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 25px;
+
+    .card {
+      padding: 20px;
+      border: 1px solid $border;
+      max-width: 30%;
+      text-align: center;
+      margin: 35px 0;
+      &:hover {
+        border: 1px solid $highlight-primary;
+        h2 {
+          color: $highlight-primary;
+        }
+      }
+      h2 {
+        color: $highlight-secondary;
+        font-weight: 600 !important;
+        font-size: 25px;
+        padding: 20px;
+      }
+    }
+
+    button {
+      background-color: $highlight-secondary;
+      color: $background;
+      border-radius: 8px;
+      padding: 10px 15px;
+      margin: 34px 0 20px 0;
+      font-weight: bold;
+      border: none;
+      width: 70%;
+      cursor: pointer;
+      &:hover {
+        background-color: $highlight-primary;
+      }
+    }
+  }
+}
