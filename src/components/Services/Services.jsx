@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from './Services.module.scss';
 
 import Rosa from '../../../public/assets/services/rosa.png';
-import Verde from '../../../public/assets/services/Verde.png';
+import Verde from '../../../public/assets/services/verde.png';
 import Naranja from '../../../public/assets/services/naranja.png';
 
 const Services = () => {
